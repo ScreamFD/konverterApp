@@ -38,7 +38,17 @@ public class ConvertActivity extends AppCompatActivity {
     public void convert(View view){
 
         String inputString = input.getText().toString();
-        Double inputDouble = Double.parseDouble(inputString);
+        Double inputDouble;
+
+        try {
+
+            inputDouble = Double.parseDouble(inputString);
+
+        } catch (NumberFormatException ex){
+            Toast warning = Toast.makeText(this, "Ungültige Eingabe!", Toast.LENGTH_LONG);
+            warning.show();
+            return;
+        }
 
         Double result;
 

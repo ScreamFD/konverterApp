@@ -18,7 +18,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:hint="Ihre Eingabe..."
-        android:gravity="center"/>
+        android:gravity="center"
+        android:inputType="number|numberSigned|numberDecimal"/>
 
     <LinearLayout
         android:orientation="vertical"
