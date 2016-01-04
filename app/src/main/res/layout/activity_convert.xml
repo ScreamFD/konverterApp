@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:id="@+id/editText"
+        android:id="@+id/input"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:hint="Ihre Eingabe..."
@@ -24,7 +24,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/input"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp">
 
@@ -38,13 +38,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="USD -> EUR"
-                android:id="@+id/button"/>
+                android:id="@+id/usdToEur"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="EUR -> USD"
-                android:id="@+id/button2"/>
+                android:id="@+id/eurToUsd"/>
         </LinearLayout>
 
         <LinearLayout
@@ -57,22 +57,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Zoll -> CM"
-                android:id="@+id/button3"/>
+                android:id="@+id/inchToCm"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="CM -> ZOLL"
-                android:id="@+id/button4"/>
+                android:id="@+id/cmToInch"/>
         </LinearLayout>
     </LinearLayout>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Ergebnis: n/a"
-        android:id="@+id/textView"
+        android:id="@+id/resultText"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:visibility="invisible"/>
