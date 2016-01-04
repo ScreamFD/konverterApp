@@ -1,6 +1,6 @@
 package de.lamber.sascha.konverter;
 
-import android.content.res.Resources;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +18,7 @@ public class ConvertActivity extends AppCompatActivity {
     Button eurToUsdButton;
     Button inchToCmButton;
     Button cmToInchButton;
+    Button resetButton;
 
     EditText input;
     TextView statusText;
@@ -31,6 +32,7 @@ public class ConvertActivity extends AppCompatActivity {
         eurToUsdButton = (Button) findViewById(R.id.eurToUsd);
         inchToCmButton = (Button) findViewById(R.id.inchToCm);
         cmToInchButton = (Button) findViewById(R.id.cmToInch);
+        resetButton = (Button) findViewById(R.id.reset);
 
         input = (EditText) findViewById(R.id.input);
         statusText = (TextView) findViewById(R.id.resultText);
@@ -74,6 +76,13 @@ public class ConvertActivity extends AppCompatActivity {
                 showResult(result, "\"");
                 break;
         }
+    }
+
+    public void reset(View view){
+        input.setText("");
+
+        statusText.setText("");
+        statusText.setVisibility(View.INVISIBLE);
     }
 
     protected Double usdToEur(Double input){

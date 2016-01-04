@@ -8,4 +8,5 @@
     <string name="ergebnis_n_a">Ergebnis: n/a</string>
     <string name="invalid_input">Ungültige Eingabe!</string>
     <string name="result">Ergebnis</string>
+    <string name="reset">Reset</string>
 </resources>
