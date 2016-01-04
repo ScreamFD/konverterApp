@@ -17,7 +17,7 @@
         android:id="@+id/input"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:hint="Ihre Eingabe..."
+        android:hint="@string/ihre_eingabe"
         android:gravity="center"
         android:inputType="number|numberSigned|numberDecimal"/>
 
@@ -38,14 +38,14 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="USD -> EUR"
+                android:text="@string/usd_eur"
                 android:id="@+id/usdToEur"
                 android:onClick="convert"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="EUR -> USD"
+                android:text="@string/eur_usd"
                 android:id="@+id/eurToUsd"
                 android:onClick="convert"/>
         </LinearLayout>
@@ -59,14 +59,14 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Zoll -> CM"
+                android:text="@string/zoll_cm"
                 android:id="@+id/inchToCm"
                 android:onClick="convert"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CM -> ZOLL"
+                android:text="@string/cm_zoll"
                 android:id="@+id/cmToInch"
                 android:onClick="convert"/>
         </LinearLayout>
@@ -76,7 +76,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Ergebnis: n/a"
+        android:text="@string/ergebnis_n_a"
         android:id="@+id/resultText"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"

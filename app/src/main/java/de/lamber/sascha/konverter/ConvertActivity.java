@@ -1,5 +1,6 @@
 package de.lamber.sascha.konverter;
 
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -45,7 +46,7 @@ public class ConvertActivity extends AppCompatActivity {
             inputDouble = Double.parseDouble(inputString);
 
         } catch (NumberFormatException ex){
-            Toast warning = Toast.makeText(this, "Ungültige Eingabe!", Toast.LENGTH_LONG);
+            Toast warning = Toast.makeText(this, R.string.invalid_input, Toast.LENGTH_LONG);
             warning.show();
             return;
         }
@@ -100,7 +101,7 @@ public class ConvertActivity extends AppCompatActivity {
         BigDecimal formatedResult = new BigDecimal(result);
         formatedResult = formatedResult.setScale(2, RoundingMode.HALF_UP);
 
-        String resultString = "Ergebnis: " + formatedResult + targetUnit;
+        String resultString = getString(R.string.result) + ": " + formatedResult + targetUnit;
 
         statusText.setText(resultString);
         statusText.setVisibility(View.VISIBLE);
