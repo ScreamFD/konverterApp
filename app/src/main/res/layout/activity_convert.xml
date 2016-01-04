@@ -38,13 +38,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="USD -> EUR"
-                android:id="@+id/usdToEur"/>
+                android:id="@+id/usdToEur"
+                android:onClick="convert"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="EUR -> USD"
-                android:id="@+id/eurToUsd"/>
+                android:id="@+id/eurToUsd"
+                android:onClick="convert"/>
         </LinearLayout>
 
         <LinearLayout
@@ -57,13 +59,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Zoll -> CM"
-                android:id="@+id/inchToCm"/>
+                android:id="@+id/inchToCm"
+                android:onClick="convert"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="CM -> ZOLL"
-                android:id="@+id/cmToInch"/>
+                android:id="@+id/cmToInch"
+                android:onClick="convert"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -75,5 +79,6 @@
         android:id="@+id/resultText"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:visibility="invisible"/>
+        android:visibility="invisible"
+        android:gravity="center"/>
 </RelativeLayout>
